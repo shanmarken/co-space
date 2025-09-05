@@ -171,19 +171,20 @@ export default function Home() {
                     <p className="text-muted-foreground">We value flexibility, community, quality, and innovation, ensuring a premium experience for all our users.</p>
                   </div>
                 </div>
-        
-                <div className="bg-secondary p-8 rounded-lg">
-                  <h2 className="font-headline text-4xl font-bold text-center mb-2">Perks of our coworking spaces</h2>
-                  <p className="text-primary text-center mb-12">Amenities Showcase</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {perks.map((perk, index) => (
-                      <Card key={index} className="text-center p-6 flex flex-col items-center justify-center bg-background shadow-lg hover:shadow-xl transition-shadow rounded-lg">
-                        {perk.icon}
-                        <h4 className="font-semibold text-lg mt-4">{perk.name}</h4>
-                      </Card>
-                    ))}
-                  </div>
-                </div>
+            </div>
+        </div>
+        <div className="bg-secondary w-full py-20">
+          <div className="container mx-auto px-4">
+              <h2 className="font-headline text-4xl font-bold text-center mb-2">Perks of our coworking spaces</h2>
+              <p className="text-primary text-center mb-12">Amenities Showcase</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {perks.map((perk, index) => (
+                  <Card key={index} className="text-center p-6 flex flex-col items-center justify-center bg-background shadow-lg hover:shadow-xl transition-shadow rounded-lg">
+                    {perk.icon}
+                    <h4 className="font-semibold text-lg mt-4">{perk.name}</h4>
+                  </Card>
+                ))}
+              </div>
             </div>
         </div>
       </section>
