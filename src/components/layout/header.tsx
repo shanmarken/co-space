@@ -41,7 +41,7 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
           <Button variant="ghost" asChild>
-            <Link href="/about">About Us</Link>
+            <Link href="/#about">About Us</Link>
           </Button>
           <Button variant="ghost" asChild>
             <Link href="/contact">Contact</Link>
@@ -71,7 +71,7 @@ export default function Header() {
                   <Link href="/?type=meeting_room">Meeting Rooms</Link>
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/about">About Us</Link>
+                  <Link href="/#about">About Us</Link>
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/contact">Contact</Link>

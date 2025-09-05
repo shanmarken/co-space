@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={spacesRef} className="bg-card py-16">
+      <section ref={spacesRef} className="py-16 bg-card">
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <h2 className="font-headline text-4xl font-bold tracking-tight text-left">
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
+      <section id="about" className="container mx-auto px-4 py-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">About SpaceBooker</h1>
           <p className="text-lg text-muted-foreground">
