@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 const perks = [
   {
@@ -106,10 +107,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={spacesRef} className="py-16 bg-card">
+      <section ref={spacesRef} className="py-16 bg-secondary w-full">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="font-headline text-4xl font-bold tracking-tight text-left">
+            <h2 className="font-headline text-5xl font-bold tracking-tight text-left">
               Find the Perfect
               <br />
               Workspace for You
@@ -186,6 +187,62 @@ export default function Home() {
                 ))}
               </div>
             </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-900 text-white py-20 w-full relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/retina-wood.png')] opacity-5"></div>
+        <div className="container mx-auto px-4 relative">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-12">
+              <h2 className="font-headline text-5xl font-bold leading-tight">
+                Building Connections,
+                <br />
+                Inspiring Success.
+              </h2>
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <p className="text-2xl font-semibold">8AM - 6PM</p>
+                  <p className="text-green-400 font-bold">MON - FRI</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold">8AM - 2PM</p>
+                  <p className="text-green-400 font-bold">SATURDAY</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold">CLOSED</p>
+                  <p className="text-green-400 font-bold">SUNDAYS & PUBLIC HOLIDAYS</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="relative aspect-[4/3]">
+                    <Image
+                      src="https://picsum.photos/600/450?random=30"
+                      alt="Community at Co-Labs"
+                      fill
+                      className="object-cover"
+                      data-ai-hint="people collaborating"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="text-center text-lg text-gray-300">
+                      Fostering a Like-Minded Community
+                      <br />
+                      Empowering Entrepreneurs, Freelancers & Innovators
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          <div className="text-right mt-8">
+              <Button asChild variant="secondary" size="lg">
+                  <Link href="/contact">Contact Us</Link>
+              </Button>
+          </div>
         </div>
       </section>
     </>
