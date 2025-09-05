@@ -257,11 +257,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[550px] rounded-lg overflow-hidden shadow-lg group">
               <Image
-                src="https://picsum.photos/800/1200?random=45"
-                alt="Support team member"
+                src="https://img.freepik.com/premium-photo/man-thinking-virtual-assistant-networking-office-technical-support-operator-hotline-male-person-plan-telemarketing-professional-faq-insurance-call-centre-service_590464-422272.jpg"
+                alt="Man thinking with a headset on in an office"
                 fill
                 className="object-cover"
-                data-ai-hint="people working"
+                data-ai-hint="thinking support"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
               <div className="absolute bottom-0 left-0 p-8 text-white">
