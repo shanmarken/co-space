@@ -1,7 +1,19 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { ChevronDown, Menu } from 'lucide-react';
+
+const spaceTypes = [
+  { value: 'hot_desk', label: 'Hot Desks' },
+  { value: 'private_office', label: 'Private Offices' },
+  { value: 'meeting_room', label: 'Meeting Rooms' },
+];
 
 export default function Header() {
   return (
@@ -13,6 +25,23 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-2">
           <Button variant="ghost" asChild>
             <Link href="/">Home</Link>
+          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost">
+                Workspaces <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {spaceTypes.map(type => (
+                <DropdownMenuItem key={type.value} asChild>
+                  <Link href={`/?type=${type.value}`}>{type.label}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <Button variant="ghost" asChild>
+            <Link href="/about">About Us</Link>
           </Button>
           <Button variant="ghost" asChild>
             <Link href="/contact">Contact</Link>
@@ -30,6 +59,19 @@ export default function Header() {
               <nav className="flex flex-col space-y-4 mt-8">
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/">Home</Link>
+                </Button>
+                {/* Simple links for mobile for now */}
+                <Button variant="link" asChild className="justify-start text-lg">
+                  <Link href="/?type=hot_desk">Hot Desks</Link>
+                </Button>
+                <Button variant="link" asChild className="justify-start text-lg">
+                  <Link href="/?type=private_office">Private Offices</Link>
+                </Button>
+                <Button variant="link" asChild className="justify-start text-lg">
+                  <Link href="/?type=meeting_room">Meeting Rooms</Link>
+                </Button>
+                <Button variant="link" asChild className="justify-start text-lg">
+                  <Link href="/about">About Us</Link>
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/contact">Contact</Link>

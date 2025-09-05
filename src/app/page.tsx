@@ -1,19 +1,29 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import FilterBar, { type Filters } from '@/components/spaces/filter-bar';
 
 export default function Home() {
+  const searchParams = useSearchParams();
   const maxCapacity = Math.max(...spaces.map(s => s.capacity), 1);
   const maxPrice = Math.max(...spaces.map(s => s.pricing.hourly), 0);
 
   const [filters, setFilters] = useState<Filters>({
-    type: 'all',
+    type: searchParams.get('type') || 'all',
     capacity: [1, maxCapacity],
     price: [0, maxPrice],
   });
+
+  useEffect(() => {
+    const typeParam = searchParams.get('type');
+    if (typeParam && typeParam !== filters.type) {
+      setFilters(prevFilters => ({ ...prevFilters, type: typeParam }));
+    }
+  }, [searchParams, filters.type]);
+
 
   const filteredSpaces = useMemo(() => {
     return spaces.filter(space => {
@@ -22,7 +32,7 @@ export default function Home() {
       const priceMatch = space.pricing.hourly >= filters.price[0] && space.pricing.hourly <= filters.price[1];
       return typeMatch && capacityMatch && priceMatch;
     });
-  }, [filters, spaces]);
+  }, [filters]);
 
   return (
     <div className="container mx-auto px-4 py-8">
