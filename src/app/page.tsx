@@ -6,9 +6,10 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const perks = [
   {
@@ -51,6 +52,29 @@ const perks = [
     name: 'Event Spaces',
     description: 'Versatile spaces for your workshops and events.',
   },
+];
+
+const faqs = [
+    {
+        question: "What types of workspaces do you offer?",
+        answer: "We provide hot desks, huddle pods, fully equipped meeting rooms, a training room, and a podcast studio. Our spaces are designed to suit both individual work and team collaborations."
+    },
+    {
+        question: "Do you provide event or workshop hosting services?",
+        answer: "Yes, we have versatile event spaces that can be configured for workshops, seminars, and other events. Contact us for more details on capacity and available equipment."
+    },
+    {
+        question: "Is there high-speed Wi-Fi available?",
+        answer: "Absolutely. All our spaces are equipped with high-speed, reliable Wi-Fi to ensure you stay connected and productive throughout your day."
+    },
+    {
+        question: "Is there parking available?",
+        answer: "Yes, we offer secure on-site parking for our members. Availability may vary, so we recommend checking in advance if you require a parking spot."
+    },
+    {
+        question: "Are the meeting rooms equipped with screens?",
+        answer: "Yes, our meeting rooms are equipped with large, high-definition screens and other presentation tools to make your meetings seamless and professional."
+    }
 ];
 
 export default function Home() {
@@ -232,6 +256,48 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[550px] rounded-lg overflow-hidden shadow-lg group">
+              <Image
+                src="https://picsum.photos/800/1200?random=45"
+                alt="Support team member"
+                fill
+                className="object-cover"
+                data-ai-hint="people working"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+              <div className="absolute bottom-0 left-0 p-8 text-white">
+                <h3 className="font-headline text-4xl font-bold mb-2">
+                  Still have questions?
+                </h3>
+                <p className="text-lg text-green-300">We're here to help, reach out to us anytime!</p>
+              </div>
+            </div>
+            <div>
+              <div className="mb-8">
+                <div className='flex items-center gap-3 mb-2'>
+                    <HelpCircle className="h-8 w-8 text-primary" />
+                    <p className="text-primary font-semibold">Questions Answered</p>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-bold">Everything You Need to Know</h2>
+              </div>
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`item-${index}`}>
+                        <AccordionTrigger className="text-lg font-semibold hover:no-underline text-left">{faq.question}</AccordionTrigger>
+                        <AccordionContent className="text-base text-muted-foreground">
+                            {faq.answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </div>
