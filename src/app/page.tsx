@@ -352,6 +352,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="w-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.985248557999!2d79.8588823153449!3d6.892150995019598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259672d964657%3A0x8633c7f12381594!2sMireka%20Tower!5e0!3m2!1sen!2slk!4v1620211116664!5m2!1sen!2slk"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          title="SpaceBooker Location"
+          className="grayscale"
+        ></iframe>
+      </section>
     </>
   );
 }
