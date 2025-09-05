@@ -216,11 +216,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-900 text-white py-16 w-full relative overflow-hidden">
+      <section className="bg-gray-900 text-white py-12 w-full relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/retina-wood.png')] opacity-5"></div>
         <div className="container mx-auto px-4 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 text-center md:text-left">
+            <div className="space-y-6 text-center md:text-left">
               <h2 className="font-headline text-4xl md:text-5xl font-bold leading-tight">
                 Building Connections,
                 <br />
