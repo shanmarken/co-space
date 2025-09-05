@@ -6,7 +6,7 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Wheelchair, ScreenShare } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const perks = [
@@ -41,7 +41,7 @@ const perks = [
     description: 'Convenient and safe parking for your vehicle.',
   },
   {
-    icon: <Wheelchair className="h-10 w-10 text-primary" />,
+    icon: <Accessibility className="h-10 w-10 text-primary" />,
     name: 'Wheelchair Accessible',
     description: 'Ensuring access for everyone.',
   },
