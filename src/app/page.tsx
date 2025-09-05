@@ -6,7 +6,7 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -343,6 +343,16 @@ export default function Home() {
                     <h3 className="font-semibold text-lg">Address</h3>
                     <p className="text-gray-300">21st Floor Mireka Tower 324 Havelock Road, Colombo 05</p>
                     <p className="text-gray-300">Sri Lanka 00500</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-gray-700 p-3 rounded-full">
+                    <Clock className="h-6 w-6 text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Opening Hours</h3>
+                    <p className="text-gray-300">MON - FRI: 8.30 AM - 6PM</p>
+                    <p className="text-gray-300">SAT, SUN & HOLIDAYS: CLOSED</p>
                   </div>
                 </div>
               </div>
