@@ -82,7 +82,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden shadow-2xl w-full">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden shadow-2xl">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://picsum.photos/1600/900?random=1"
