@@ -216,11 +216,11 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="relative aspect-[4/3]">
                     <Image
-                      src="https://picsum.photos/600/450?random=30"
+                      src="https://picsum.photos/600/450?random=31"
                       alt="Community at Co-Labs"
                       fill
                       className="object-cover"
-                      data-ai-hint="people collaborating"
+                      data-ai-hint="happy team"
                     />
                   </div>
                   <div className="p-6">
