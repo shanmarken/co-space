@@ -20,7 +20,7 @@ export default function Header() {
     <header className="bg-card shadow-sm sticky top-0 z-40">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         <Link href="/" className="text-2xl font-headline font-bold text-primary">
-          SpaceBooker
+          Co-Space
         </Link>
         <nav className="hidden md:flex items-center space-x-2">
           <Button variant="ghost" asChild>

@@ -159,7 +159,7 @@ export default function Home() {
 
       <section id="about" ref={aboutRef} className="py-20 bg-background w-full">
         <div className="container mx-auto px-4 text-center max-w-4xl mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">About SpaceBooker</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">About Co-Space</h2>
           <p className="text-lg text-muted-foreground">
             We are revolutionizing the way professionals find and book workspaces. Our mission is to provide flexible, on-demand spaces that inspire productivity and foster collaboration.
           </p>
@@ -360,7 +360,7 @@ export default function Home() {
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="SpaceBooker Location"
+          title="Co-Space Location"
         ></iframe>
       </section>
     </>

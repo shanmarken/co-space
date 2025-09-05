@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Column 1: Brand & Description */}
           <div className="md:col-span-1">
             <Link href="/" className="text-2xl font-headline font-bold text-white mb-2 inline-block">
-              SpaceBooker
+              Co-Space
             </Link>
             <p className="text-sm">
               Discover and book unique co-working spaces and meeting rooms on-demand.
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; {new Date().getFullYear()} SpaceBooker. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Co-Space. All rights reserved.</p>
         </div>
       </div>
     </footer>
