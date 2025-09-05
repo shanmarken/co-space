@@ -63,8 +63,8 @@ export default function Home() {
       </section>
 
       <div ref={spacesRef} className="mb-12">
-        <h2 className="font-headline text-3xl font-bold tracking-tight text-left">
-          Find the Perfect-
+        <h2 className="font-headline text-4xl font-bold tracking-tight text-left">
+          Find the Perfect
           <br />
           Workspace for You
         </h2>
