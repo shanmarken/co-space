@@ -216,23 +216,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-900 text-white py-20 w-full relative overflow-hidden">
+      <section className="bg-gray-900 text-white py-16 w-full relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/retina-wood.png')] opacity-5"></div>
         <div className="container mx-auto px-4 relative">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-12">
-              <h2 className="font-headline text-5xl font-bold leading-tight">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8 text-center md:text-left">
+              <h2 className="font-headline text-4xl md:text-5xl font-bold leading-tight">
                 Building Connections,
                 <br />
                 Inspiring Success.
               </h2>
-              <div className="grid grid-cols-2 gap-4 text-center">
+              <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-8 text-center">
                 <div>
-                  <p className="text-2xl font-semibold">8.30 AM - 6PM</p>
+                  <p className="text-xl font-semibold">8.30 AM - 6PM</p>
                   <p className="text-green-400 font-bold">MON - FRI</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold">CLOSED</p>
+                  <p className="text-xl font-semibold">CLOSED</p>
                   <p className="text-green-400 font-bold">SATURDAY, SUNDAYS & PUBLIC HOLIDAYS</p>
                 </div>
               </div>
