@@ -234,11 +234,6 @@ export default function Home() {
               </Card>
             </div>
           </div>
-          <div className="text-right mt-8">
-              <Button asChild variant="secondary" size="lg">
-                  <Link href="/contact">Contact Us</Link>
-              </Button>
-          </div>
         </div>
       </section>
     </>
