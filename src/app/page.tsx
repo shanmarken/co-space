@@ -62,8 +62,8 @@ const faqs = [
         answer: "We provide hot desks, huddle pods, fully equipped meeting rooms. Our spaces are designed to suit both individual work and team collaborations."
     },
     {
-        question: "Do you provide event or workshop hosting services?",
-        answer: "Yes, we have versatile event spaces that can be configured for workshops, seminars, and other events. Contact us for more details on capacity and available equipment."
+        question: "Do you provide a pantry area for members?",
+        answer: "Yes, our coworking space includes a fully equipped pantry area with basic facilities such as a refrigerator, microwave, water dispenser, and tea/coffee-making options. It’s designed to give you a convenient spot to refresh and recharge during your workday."
     },
     {
         question: "Is there high-speed Wi-Fi available?",
