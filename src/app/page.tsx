@@ -303,7 +303,7 @@ export default function Home() {
                 <p className="text-green-400 font-semibold">Contact Us</p>
               </div>
               <h2 className="font-headline text-5xl font-bold">Get in Touch.</h2>
-              <p className="text-lg text-gray-300">Unlock smarter workdays. Book your space at CO-LABs and discover the future of coworking today</p>
+              <p className="text-lg text-gray-300">Unlock smarter workdays. Book your workplace at CO-Space and discover the future of coworking today</p>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -312,7 +312,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Phone Number</h3>
-                    <p className="text-gray-300">+94 777 406 170</p>
+                    <p className="text-gray-300">+94 77 867 3863</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -321,7 +321,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Address</h3>
-                    <p className="text-gray-300">hello@colabsotr.com</p>                  </div>
+                    <p className="text-gray-300">cospace@globalpearlventures.com</p>                  </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-gray-700 p-3 rounded-full">
@@ -329,8 +329,9 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Address</h3>
-                    <p className="text-gray-300">21st Floor Mireka Tower 324 Havelock Road, Colombo 05</p>
-                    <p className="text-gray-300">Sri Lanka 00500</p>
+                    <p className="text-gray-300">1st Floor 541/10A Suhada Pedesa,Ruhunupura</p>
+                    <p className="text-gray-300">Thalawathugoda</p>
+                    <p className="text-gray-300">Sri Lanka 10116</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
