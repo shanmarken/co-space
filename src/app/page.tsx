@@ -172,7 +172,7 @@ export default function Home() {
                   </div>
                 </div>
         
-                <div className="p-8 rounded-lg">
+                <div className="bg-secondary p-8 rounded-lg">
                   <h2 className="font-headline text-4xl font-bold text-center mb-2">Perks of our coworking spaces</h2>
                   <p className="text-primary text-center mb-12">Amenities Showcase</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
