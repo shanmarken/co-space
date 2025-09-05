@@ -1,0 +1,86 @@
+import type { Space } from './types';
+
+export const spaces: Space[] = [
+  {
+    id: 'urban-oasis-desk',
+    name: 'Urban Oasis Hot Desk',
+    description: 'A vibrant, open-plan hot desk area perfect for freelancers and remote workers. Enjoy our high-speed Wi-Fi and unlimited coffee.',
+    capacity: 1,
+    amenities: ['wifi', 'coffee', 'printing'],
+    images: ['https://picsum.photos/800/600?random=1', 'https://picsum.photos/800/600?random=2'],
+    pricing: {
+      hourly: 10,
+      daily: 50,
+      weekly: 200,
+    },
+    type: 'hot_desk',
+  },
+  {
+    id: 'quiet-corner-office',
+    name: 'Quiet Corner Private Office',
+    description: 'A serene and private office for focused work. Ideal for small teams or individuals needing a dedicated space.',
+    capacity: 4,
+    amenities: ['wifi', 'coffee', 'printing', 'whiteboard'],
+    images: ['https://picsum.photos/800/600?random=3', 'https://picsum.photos/800/600?random=4'],
+    pricing: {
+      hourly: 40,
+      daily: 250,
+      monthly: 4000,
+    },
+    type: 'private_office',
+  },
+  {
+    id: 'collaborate-hub-room',
+    name: 'Collaborate Hub Meeting Room',
+    description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
+    capacity: 12,
+    amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
+    images: ['https://picsum.photos/800/600?random=5', 'https://picsum.photos/800/600?random=6'],
+    pricing: {
+      hourly: 75,
+      daily: 500,
+    },
+    type: 'meeting_room',
+  },
+  {
+    id: 'sunlight-studio',
+    name: 'Sunlight Studio',
+    description: 'A bright and airy private office filled with natural light. Comes with ergonomic furniture and dedicated parking.',
+    capacity: 2,
+    amenities: ['wifi', 'coffee', 'parking'],
+    images: ['https://picsum.photos/800/600?random=7', 'https://picsum.photos/800/600?random=8'],
+    pricing: {
+      hourly: 25,
+      daily: 180,
+      monthly: 2500,
+    },
+    type: 'private_office',
+  },
+  {
+    id: 'creator-lounge-desk',
+    name: 'Creator Lounge Hot Desk',
+    description: 'A dynamic hot desk space designed for creative professionals. Network with fellow innovators in a relaxed environment.',
+    capacity: 1,
+    amenities: ['wifi', 'coffee'],
+    images: ['https://picsum.photos/800/600?random=9', 'https://picsum.photos/800/600?random=10'],
+    pricing: {
+      hourly: 8,
+      daily: 45,
+      weekly: 180,
+    },
+    type: 'hot_desk',
+  },
+  {
+    id: 'boardroom-pro',
+    name: 'The Boardroom Pro',
+    description: 'An executive boardroom for up to 20 people. Features premium A/V equipment, a private kitchenette, and stunning city views.',
+    capacity: 20,
+    amenities: ['wifi', 'coffee', 'printing', 'kitchen', 'whiteboard'],
+    images: ['https://picsum.photos/800/600?random=11', 'https://picsum.photos/800/600?random=12'],
+    pricing: {
+      hourly: 150,
+      daily: 1000,
+    },
+    type: 'meeting_room',
+  },
+];
