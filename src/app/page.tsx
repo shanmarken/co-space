@@ -200,18 +200,14 @@ export default function Home() {
                 <br />
                 Inspiring Success.
               </h2>
-              <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="grid grid-cols-2 gap-4 text-center">
                 <div>
-                  <p className="text-2xl font-semibold">8AM - 6PM</p>
+                  <p className="text-2xl font-semibold">8.30 AM - 6PM</p>
                   <p className="text-green-400 font-bold">MON - FRI</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold">8AM - 2PM</p>
-                  <p className="text-green-400 font-bold">SATURDAY</p>
-                </div>
-                <div>
                   <p className="text-2xl font-semibold">CLOSED</p>
-                  <p className="text-green-400 font-bold">SUNDAYS & PUBLIC HOLIDAYS</p>
+                  <p className="text-green-400 font-bold">SATURDAY, SUNDAYS & PUBLIC HOLIDAYS</p>
                 </div>
               </div>
             </div>
