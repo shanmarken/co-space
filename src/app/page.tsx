@@ -1,15 +1,19 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import FilterBar, { type Filters } from '@/components/spaces/filter-bar';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { ArrowDown } from 'lucide-react';
 
 export default function Home() {
   const searchParams = useSearchParams();
   const maxCapacity = Math.max(...spaces.map(s => s.capacity), 1);
   const maxPrice = Math.max(...spaces.map(s => s.pricing.hourly), 0);
+  const filterRef = useRef<HTMLDivElement>(null);
 
   const [filters, setFilters] = useState<Filters>({
     type: searchParams.get('type') || 'all',
@@ -33,17 +37,41 @@ export default function Home() {
       return typeMatch && capacityMatch && priceMatch;
     });
   }, [filters]);
+  
+  const handleScrollToFilters = () => {
+    filterRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <section className="text-center mb-12">
-        <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">Find Your Perfect Workspace</h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Discover and book unique co-working spaces and meeting rooms on-demand. No subscriptions, no hassles.
-        </p>
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden mb-12 rounded-lg shadow-2xl">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://picsum.photos/1600/900?random=1"
+            alt="Inspiring workspace"
+            fill
+            className="object-cover"
+            data-ai-hint="inspiring workspace"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        <div className="relative z-10 p-4 animate-fade-in-up">
+          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-4 drop-shadow-lg">
+            Find Your Perfect Workspace
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-md">
+            Discover and book unique co-working spaces and meeting rooms on-demand. No subscriptions, no hassles.
+          </p>
+          <Button size="lg" onClick={handleScrollToFilters}>
+            Explore Spaces <ArrowDown className="ml-2 h-5 w-5" />
+          </Button>
+        </div>
       </section>
 
-      <FilterBar filters={filters} setFilters={setFilters} maxCapacity={maxCapacity} maxPrice={maxPrice} />
+      <div ref={filterRef}>
+        <FilterBar filters={filters} setFilters={setFilters} maxCapacity={maxCapacity} maxPrice={maxPrice} />
+      </div>
 
       {filteredSpaces.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
