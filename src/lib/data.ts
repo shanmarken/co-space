@@ -67,7 +67,7 @@ export const spaces: Space[] = [
       hourly: 30,
       daily: 200,
     },
-    type: 'meeting_room',
+    type: 'huddle_pods',
   },
   {
     id: 'boardroom-pro',

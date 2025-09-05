@@ -13,6 +13,7 @@ const spaceTypes = [
   { value: 'hot_desk', label: 'Hot Desks' },
   { value: 'private_office', label: 'Private Offices' },
   { value: 'meeting_room', label: 'Meeting Rooms' },
+  { value: 'huddle_pods', label: 'Huddle Pods' },
 ];
 
 export default function Header() {
@@ -69,6 +70,9 @@ export default function Header() {
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/?type=meeting_room">Meeting Rooms</Link>
+                </Button>
+                <Button variant="link" asChild className="justify-start text-lg">
+                  <Link href="/?type=huddle_pods">Huddle Pods</Link>
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/#about">About Us</Link>

@@ -6,7 +6,7 @@ export type Amenity =
   | 'parking'
   | 'whiteboard';
 
-export type SpaceType = 'hot_desk' | 'private_office' | 'meeting_room';
+export type SpaceType = 'hot_desk' | 'private_office' | 'meeting_room' | 'huddle_pods';
 
 export interface Space {
   id: string;

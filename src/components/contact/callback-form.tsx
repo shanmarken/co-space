@@ -31,6 +31,7 @@ const typeLabels: { [key: string]: string } = {
   hot_desk: 'Hot Desk',
   private_office: 'Private Office',
   meeting_room: 'Meeting Room',
+  huddle_pods: 'Huddle Pods',
 };
 
 export default function CallbackForm() {

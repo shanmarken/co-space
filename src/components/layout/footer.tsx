@@ -23,6 +23,7 @@ export default function Footer() {
               <li><Link href="/?type=hot_desk" className="hover:text-white transition-colors">Hot Desks</Link></li>
               <li><Link href="/?type=private_office" className="hover:text-white transition-colors">Private Offices</Link></li>
               <li><Link href="/?type=meeting_room" className="hover:text-white transition-colors">Meeting Rooms</Link></li>
+              <li><Link href="/?type=huddle_pods" className="hover:text-white transition-colors">Huddle Pods</Link></li>
             </ul>
           </div>
 
