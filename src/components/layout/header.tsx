@@ -44,7 +44,7 @@ export default function Header() {
             <Link href="/#about">About Us</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <Link href="/contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
           </Button>
         </nav>
         <div className="md:hidden">
@@ -74,7 +74,7 @@ export default function Header() {
                   <Link href="/#about">About Us</Link>
                 </Button>
                 <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/contact">Contact</Link>
+                  <Link href="/#contact">Contact</Link>
                 </Button>
               </nav>
             </SheetContent>

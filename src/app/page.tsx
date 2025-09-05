@@ -84,7 +84,6 @@ export default function Home() {
   const [spaceType, setSpaceType] = useState('all');
   const spacesRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const typeParam = searchParams.get('type');
@@ -295,7 +294,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={contactRef} className="py-20 bg-gray-800 text-white w-full">
+      <section id="contact" className="py-20 bg-gray-800 text-white w-full">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
