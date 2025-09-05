@@ -59,7 +59,7 @@ const perks = [
 const faqs = [
     {
         question: "What types of workspaces do you offer?",
-        answer: "We provide hot desks, huddle pods, fully equipped meeting rooms, a training room, and a podcast studio. Our spaces are designed to suit both individual work and team collaborations."
+        answer: "We provide hot desks, huddle pods, fully equipped meeting rooms. Our spaces are designed to suit both individual work and team collaborations."
     },
     {
         question: "Do you provide event or workshop hosting services?",
