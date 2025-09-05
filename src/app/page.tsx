@@ -363,7 +363,6 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="SpaceBooker Location"
-          className="grayscale"
         ></iframe>
       </section>
     </>
