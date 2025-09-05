@@ -6,10 +6,12 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle, Phone, Mail, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import CallbackForm from '@/components/contact/callback-form';
+
 
 const perks = [
   {
@@ -299,6 +301,54 @@ export default function Home() {
                 ))}
               </Accordion>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section ref={contactRef} className="py-20 bg-gray-800 text-white w-full">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div className="space-y-8">
+              <div className="flex items-center gap-3">
+                <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+                <p className="text-green-400 font-semibold">Contact Us</p>
+              </div>
+              <h2 className="font-headline text-5xl font-bold">Get in Touch.</h2>
+              <p className="text-lg text-gray-300">Unlock smarter workdays. Book your space at CO-LABs and discover the future of coworking today</p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-gray-700 p-3 rounded-full">
+                    <Phone className="h-6 w-6 text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Phone Number</h3>
+                    <p className="text-gray-300">+94 777 406 170</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-gray-700 p-3 rounded-full">
+                    <Mail className="h-6 w-6 text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Email Address</h3>
+                    <p className="text-gray-300">hello@colabsotr.com</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-gray-700 p-3 rounded-full">
+                    <MapPin className="h-6 w-6 text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Address</h3>
+                    <p className="text-gray-300">21st Floor Mireka Tower 324 Havelock Road, Colombo 05</p>
+                    <p className="text-gray-300">Sri Lanka 00500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <CallbackForm />
           </div>
         </div>
       </section>
