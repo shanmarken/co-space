@@ -6,15 +6,58 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Wheelchair, ScreenShare } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+
+const perks = [
+  {
+    icon: <Wifi className="h-10 w-10 text-primary" />,
+    name: 'High-Speed Wi-Fi',
+    description: 'Blazing fast internet to keep you productive.',
+  },
+  {
+    icon: <PersonStanding className="h-10 w-10 text-primary" />,
+    name: 'Dedicated Desks',
+    description: 'Your own personal space in our vibrant community.',
+  },
+  {
+    icon: <MonitorSpeaker className="h-10 w-10 text-primary" />,
+    name: 'Private Meeting',
+    description: 'Confidential, professional rooms for your meetings.',
+  },
+  {
+    icon: <Coffee className="h-10 w-10 text-primary" />,
+    name: 'Coffee Bar',
+    description: 'Unlimited premium coffee to fuel your day.',
+  },
+  {
+    icon: <Mic className="h-10 w-10 text-primary" />,
+    name: 'Studio Space',
+    description: 'Equipped for your podcasting and recording needs.',
+  },
+  {
+    icon: <ParkingCircle className="h-10 w-10 text-primary" />,
+    name: 'Secure Parking',
+    description: 'Convenient and safe parking for your vehicle.',
+  },
+  {
+    icon: <Wheelchair className="h-10 w-10 text-primary" />,
+    name: 'Wheelchair Accessible',
+    description: 'Ensuring access for everyone.',
+  },
+    {
+    icon: <ScreenShare className="h-10 w-10 text-primary" />,
+    name: 'Event Spaces',
+    description: 'Versatile spaces for your workshops and events.',
+  },
+];
 
 export default function Home() {
   const searchParams = useSearchParams();
   const [spaceType, setSpaceType] = useState('all');
   const spacesRef = useRef<HTMLDivElement>(null);
-
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const typeParam = searchParams.get('type');
@@ -24,7 +67,6 @@ export default function Home() {
       setSpaceType('all');
     }
   }, [searchParams]);
-
 
   const filteredSpaces = useMemo(() => {
     if (spaceType === 'all') {
@@ -39,7 +81,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden shadow-2xl">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden shadow-2xl w-full">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://picsum.photos/1600/900?random=1"
@@ -89,9 +131,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-background">
+      <section id="about" ref={aboutRef} className="py-20 bg-background w-full">
         <div className="container mx-auto px-4 text-center max-w-4xl mb-16">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">About SpaceBooker</h1>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">About SpaceBooker</h2>
           <p className="text-lg text-muted-foreground">
             We are revolutionizing the way professionals find and book workspaces. Our mission is to provide flexible, on-demand spaces that inspire productivity and foster collaboration.
           </p>
@@ -106,7 +148,7 @@ export default function Home() {
             data-ai-hint="office building"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h2 className="font-headline text-5xl font-bold text-white text-center p-4 max-w-4xl">Your next great idea starts here.</h2>
+            <h3 className="font-headline text-5xl font-bold text-white text-center p-4 max-w-4xl">Your next great idea starts here.</h3>
           </div>
         </div>
 
@@ -131,40 +173,15 @@ export default function Home() {
                 </div>
         
                 <div className="p-8 rounded-lg">
-                  <h2 className="font-headline text-4xl font-bold text-center mb-12">Meet the Team</h2>
+                  <h2 className="font-headline text-4xl font-bold text-center mb-2">Perks of our coworking spaces</h2>
+                  <p className="text-primary text-center mb-12">Amenities Showcase</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="text-center">
-                      <Avatar className="w-28 h-28 mx-auto mb-4 border-4 border-primary">
-                        <AvatarImage src="https://picsum.photos/100/100?random=21" />
-                        <AvatarFallback>JS</AvatarFallback>
-                      </Avatar>
-                      <h4 className="font-semibold text-xl">Jane Smith</h4>
-                      <p className="text-primary">CEO & Founder</p>
-                    </div>
-                    <div className="text-center">
-                      <Avatar className="w-28 h-28 mx-auto mb-4 border-4 border-primary">
-                        <AvatarImage src="https://picsum.photos/100/100?random=22" />
-                        <AvatarFallback>JD</AvatarFallback>
-                      </Avatar>
-                      <h4 className="font-semibold text-xl">John Doe</h4>
-                      <p className="text-primary">CTO & Co-Founder</p>
-                    </div>
-                    <div className="text-center">
-                      <Avatar className="w-28 h-28 mx-auto mb-4 border-4 border-primary">
-                        <AvatarImage src="https://picsum.photos/100/100?random=23" />
-                        <AvatarFallback>AL</AvatarFallback>
-                      </Avatar>
-                      <h4 className="font-semibold text-xl">Alex Lee</h4>
-                      <p className="text-primary">Head of Product</p>
-                    </div>
-                    <div className="text-center">
-                      <Avatar className="w-28 h-28 mx-auto mb-4 border-4 border-primary">
-                        <AvatarImage src="https://picsum.photos/100/100?random=24" />
-                        <AvatarFallback>SM</AvatarFallback>
-                      </Avatar>
-                      <h4 className="font-semibold text-xl">Sarah Miller</h4>
-                      <p className="text-primary">Community Manager</p>
-                    </div>
+                    {perks.map((perk, index) => (
+                      <Card key={index} className="text-center p-6 flex flex-col items-center justify-center bg-background shadow-lg hover:shadow-xl transition-shadow rounded-lg">
+                        {perk.icon}
+                        <h4 className="font-semibold text-lg mt-4">{perk.name}</h4>
+                      </Card>
+                    ))}
                   </div>
                 </div>
             </div>
