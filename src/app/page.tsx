@@ -219,25 +219,15 @@ export default function Home() {
       <section className="bg-gray-900 text-white py-12 w-full relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/retina-wood.png')] opacity-5"></div>
         <div className="container mx-auto px-4 relative">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-center md:text-left">
+          <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+            <div className="space-y-4 text-center md:text-left max-w-md">
               <h2 className="font-headline text-4xl md:text-5xl font-bold leading-tight">
                 Building Connections,
                 <br />
                 Inspiring Success.
               </h2>
-              <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-8 text-center">
-                <div>
-                  <p className="text-xl font-semibold">8.30 AM - 6PM</p>
-                  <p className="text-green-400 font-bold">MON - FRI</p>
-                </div>
-                <div>
-                  <p className="text-xl font-semibold">CLOSED</p>
-                  <p className="text-green-400 font-bold">SATURDAY, SUNDAYS & PUBLIC HOLIDAYS</p>
-                </div>
-              </div>
             </div>
-            <div>
+            <div className='w-full max-w-sm'>
               <Card className="bg-gray-800 border-gray-700 overflow-hidden">
                 <CardContent className="p-0">
                   <div className="relative aspect-[4/3]">
