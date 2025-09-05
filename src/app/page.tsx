@@ -62,8 +62,12 @@ export default function Home() {
         </div>
       </section>
 
-      <div ref={spacesRef} className="text-center mb-12">
-        <h2 className="font-headline text-3xl font-bold tracking-tight">Workspace for You</h2>
+      <div ref={spacesRef} className="mb-12">
+        <h2 className="font-headline text-3xl font-bold tracking-tight text-left">
+          Find the Perfect-
+          <br />
+          Workspace for You
+        </h2>
       </div>
 
       {filteredSpaces.length > 0 ? (
