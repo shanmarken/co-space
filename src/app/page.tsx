@@ -4,42 +4,35 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
-import FilterBar, { type Filters } from '@/components/spaces/filter-bar';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 
 export default function Home() {
   const searchParams = useSearchParams();
-  const maxCapacity = Math.max(...spaces.map(s => s.capacity), 1);
-  const maxPrice = Math.max(...spaces.map(s => s.pricing.hourly), 0);
-  const filterRef = useRef<HTMLDivElement>(null);
+  const [spaceType, setSpaceType] = useState('all');
+  const spacesRef = useRef<HTMLDivElement>(null);
 
-  const [filters, setFilters] = useState<Filters>({
-    type: searchParams.get('type') || 'all',
-    capacity: [1, maxCapacity],
-    price: [0, maxPrice],
-  });
 
   useEffect(() => {
     const typeParam = searchParams.get('type');
-    if (typeParam && typeParam !== filters.type) {
-      setFilters(prevFilters => ({ ...prevFilters, type: typeParam }));
+    if (typeParam) {
+      setSpaceType(typeParam);
+    } else {
+      setSpaceType('all');
     }
-  }, [searchParams, filters.type]);
+  }, [searchParams]);
 
 
   const filteredSpaces = useMemo(() => {
-    return spaces.filter(space => {
-      const typeMatch = filters.type === 'all' || space.type === filters.type;
-      const capacityMatch = space.capacity >= filters.capacity[0] && space.capacity <= filters.capacity[1];
-      const priceMatch = space.pricing.hourly >= filters.price[0] && space.pricing.hourly <= filters.price[1];
-      return typeMatch && capacityMatch && priceMatch;
-    });
-  }, [filters]);
+    if (spaceType === 'all') {
+      return spaces;
+    }
+    return spaces.filter(space => space.type === spaceType);
+  }, [spaceType]);
   
-  const handleScrollToFilters = () => {
-    filterRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToSpaces = () => {
+    spacesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -63,14 +56,14 @@ export default function Home() {
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8 drop-shadow-md">
             Discover and book unique co-working spaces and meeting rooms on-demand. No subscriptions, no hassles.
           </p>
-          <Button size="lg" onClick={handleScrollToFilters}>
+          <Button size="lg" onClick={handleScrollToSpaces}>
             Explore Spaces <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>
 
-      <div ref={filterRef}>
-        <FilterBar filters={filters} setFilters={setFilters} maxCapacity={maxCapacity} maxPrice={maxPrice} />
+      <div ref={spacesRef} className="text-center mb-12">
+        <h2 className="font-headline text-3xl font-bold tracking-tight">Workspace for You</h2>
       </div>
 
       {filteredSpaces.length > 0 ? (
