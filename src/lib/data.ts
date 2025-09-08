@@ -32,7 +32,7 @@ export const spaces: Space[] = [
   },
   {
     id: 'collaborate-hub-room',
-    name: 'Collaborate Hub Meeting Room',
+    name: 'Collaborate Meeting Room',
     description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
     capacity: 8,
     amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
