@@ -26,7 +26,7 @@ const perks = [
   },
   {
     icon: <MonitorSpeaker className="h-10 w-10 text-primary" />,
-    name: 'Private Meeting',
+    name: 'meeting room',
     description: 'Confidential, professional rooms for your meetings.',
   },
   {
