@@ -321,7 +321,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Address</h3>
-                    <p className="text-gray-300">cospace@globalpearlventures.com</p>                  </div>
+                    <p className="text-gray-300">info@globalpearlventures.com</p>                  </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-gray-700 p-3 rounded-full">
