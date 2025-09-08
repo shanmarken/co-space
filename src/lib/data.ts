@@ -58,6 +58,20 @@ export const spaces: Space[] = [
     type: 'private_office',
   },
   {
+    id: 'quiet-corner-desk',
+    name: 'Quiet Corner Dedicated Desk',
+    description: 'A serene and dedicated desk for focused work. Ideal for individuals needing a dedicated space.',
+    capacity: 1,
+    amenities: ['wifi', 'coffee', 'printing'],
+    images: ['https://picsum.photos/800/600?random=15', 'https://picsum.photos/800/600?random=16'],
+    pricing: {
+      hourly: 0,
+      daily: 0,
+      monthly: 22000,
+    },
+    type: 'hot_desk',
+  },
+  {
     id: 'sunlight-studio',
     name: 'Sunlight Studio',
     description: 'A bright and airy private office filled with natural light. Comes with ergonomic furniture and dedicated parking.',
