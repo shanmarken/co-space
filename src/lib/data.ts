@@ -44,20 +44,6 @@ export const spaces: Space[] = [
     type: 'meeting_room',
   },
   {
-    id: 'quiet-corner-office',
-    name: 'Quiet Corner Private Office',
-    description: 'A serene and private office for focused work. Ideal for small teams or individuals needing a dedicated space.',
-    capacity: 4,
-    amenities: ['wifi', 'coffee', 'printing', 'whiteboard'],
-    images: ['https://picsum.photos/800/600?random=3', 'https://picsum.photos/800/600?random=4'],
-    pricing: {
-      hourly: 40,
-      daily: 250,
-      monthly: 4000,
-    },
-    type: 'private_office',
-  },
-  {
     id: 'quiet-corner-desk',
     name: 'Quiet Corner Dedicated Desk',
     description: 'A serene and dedicated desk for focused work. Ideal for individuals needing a dedicated space.',
