@@ -6,7 +6,7 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Accessibility, ScreenShare, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, Wind, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -45,14 +45,14 @@ const perks = [
     description: 'Convenient and safe parking for your vehicle.',
   },
   {
-    icon: <Accessibility className="h-10 w-10 text-primary" />,
-    name: 'Wheelchair Accessible',
-    description: 'Ensuring access for everyone.',
+    icon: <Wind className="h-10 w-10 text-primary" />,
+    name: 'Outdoor Space',
+    description: 'A breath of fresh air for breaks and informal meetings.',
   },
-    {
-    icon: <ScreenShare className="h-10 w-10 text-primary" />,
-    name: 'Event Spaces',
-    description: 'Versatile spaces for your workshops and events.',
+  {
+    icon: <Utensils className="h-10 w-10 text-primary" />,
+    name: 'Pantry',
+    description: 'Fully stocked pantry with snacks and refreshments.',
   },
 ];
 
