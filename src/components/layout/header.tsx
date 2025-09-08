@@ -11,6 +11,7 @@ import { ChevronDown, Menu } from 'lucide-react';
 
 const spaceTypes = [
   { value: 'hot-desk', label: 'Hot Desks' },
+  { value: 'dedicated-desk', label: 'Dedicated Desks' },
   { value: 'private-office', label: 'Private Offices' },
   { value: 'meeting-room', label: 'Meeting Rooms' },
   { value: 'huddle-pods', label: 'Huddle Pods' },

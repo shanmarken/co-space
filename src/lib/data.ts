@@ -55,7 +55,7 @@ export const spaces: Space[] = [
       daily: 0,
       monthly: 22000,
     },
-    type: 'hot_desk',
+    type: 'dedicated_desk',
   },
   {
     id: 'sunlight-studio',

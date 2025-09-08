@@ -29,6 +29,7 @@ type CallbackFormValues = z.infer<typeof callbackFormSchema>;
 
 const typeLabels: { [key: string]: string } = {
   hot_desk: 'Hot Desk',
+  dedicated_desk: 'Dedicated Desk',
   private_office: 'Private Office',
   meeting_room: 'Meeting Room',
   huddle_pods: 'Huddle Pods',

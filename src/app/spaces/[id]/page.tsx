@@ -17,6 +17,7 @@ const typeLabels = {
     private_office: 'Private Office',
     meeting_room: 'Meeting Room',
     huddle_pods: 'Huddle Pods',
+    dedicated_desk: 'Dedicated Desk',
 };
 
 export default async function SpaceDetailsPage({ params }: SpaceDetailsPageProps) {

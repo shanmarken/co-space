@@ -15,6 +15,7 @@ const typeLabels: Record<Space['type'], string> = {
   private_office: 'Private Office',
   meeting_room: 'Meeting Room',
   huddle_pods: 'Huddle Pods',
+  dedicated_desk: 'Dedicated Desk',
 };
 
 const typeLinks: Record<Space['type'], string> = {
@@ -22,6 +23,7 @@ const typeLinks: Record<Space['type'], string> = {
     private_office: '/private-office',
     meeting_room: '/meeting-room',
     huddle_pods: '/huddle-pods',
+    dedicated_desk: '/dedicated-desk',
 }
 
 export default function SpaceCard({ space }: SpaceCardProps) {
