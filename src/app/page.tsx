@@ -167,11 +167,11 @@ export default function Home() {
 
         <div className="relative h-96">
           <Image
-            src="https://picsum.photos/1600/500?random=20"
-            alt="Modern office interior"
+            src="https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976865.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Modern office interior with a desk and chair"
             fill
             className="object-cover"
-            data-ai-hint="office building"
+            data-ai-hint="office studio"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h3 className="font-headline text-5xl font-bold text-white text-center p-4 max-w-4xl">Your next great idea starts here.</h3>
