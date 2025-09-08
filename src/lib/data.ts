@@ -26,7 +26,7 @@ export const spaces: Space[] = [
     pricing: {
       hourly: 0,
       daily: 0,
-      monthly: 25000,
+      monthly: 105000,
     },
     type: 'huddle_pods',
   },
