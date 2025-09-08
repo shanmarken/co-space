@@ -74,7 +74,7 @@ export const spaces: Space[] = [
   {
     id: 'modern-private-office',
     name: 'The Hive',
-    description: 'A quiet and private workspace designed for productivity. Ideal for individuals or small teams who need a dedicated office with added privacy.',
+    description: 'A vibrant private office designed for energy and inspiration. With modern interiors, ergonomic setups, and a touch of creativity, this space fuels both focus and collaboration. Perfect for small teams ready to build big ideas.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'parking', 'printing'],
     images: ['https://picsum.photos/800/600?random=27', 'https://picsum.photos/800/600?random=28'],
