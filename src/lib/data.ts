@@ -76,7 +76,7 @@ export const spaces: Space[] = [
     description: 'A vibrant private office designed for energy and inspiration. With modern interiors, ergonomic setups, and a touch of creativity, this space fuels both focus and collaboration. Perfect for small teams ready to build big ideas.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'parking', 'printing'],
-    images: ['https://picsum.photos/800/600?random=27', 'https://picsum.photos/800/600?random=28'],
+    images: ['https://img.freepik.com/free-photo/empty-modern-office-workspace-designed-job-interviews-achieve-success_482257-116550.jpg?semt=ais_hybrid&w=740', 'https://picsum.photos/800/600?random=28'],
     pricing: {
       hourly: 0,
       daily: 0,
