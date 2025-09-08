@@ -1,5 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { CheckCircle } from 'lucide-react';
+
+const features = [
+    "High-speed Wi-Fi",
+    "Ergonomic desks and chairs",
+    "Natural-light interiors with modern décor",
+    "Complimentary coffee, tea, and water",
+    "Dedicated parking space",
+    "Professional setting ideal for small teams"
+];
 
 export default function PrivateOfficePage() {
   return (
@@ -8,27 +19,58 @@ export default function PrivateOfficePage() {
         <div className="absolute inset-0">
           <Image
             src="https://picsum.photos/1600/900?random=20"
-            alt="Private office"
+            alt="The Hive private office"
             fill
             className="object-cover"
-            data-ai-hint="blurry office"
+            data-ai-hint="modern office"
             priority
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="relative z-10 text-center p-4">
           <h1 className="font-headline text-5xl md:text-7xl font-bold">
-            Private <span className="text-green-400">Office.</span>
+            The <span className="text-primary">Hive.</span>
           </h1>
           <p className="mt-4 text-lg">
             <Link href="/" className="hover:underline">Home</Link> / <span>Private Office</span>
           </p>
         </div>
       </section>
-       <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h2 className="font-headline text-3xl font-bold mb-4">Content coming soon</h2>
-            <p className="text-muted-foreground">This page is under construction. Check back later for more details about our private office spaces.</p>
+
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+            <div className='mb-12'>
+                <h2 className="font-headline text-3xl font-bold mb-4">
+                    Workspaces That Spark Creativity & Growth
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                    Step into The Hive, a vibrant private office designed for teams that thrive on energy and inspiration. Whether you’re a small startup, a creative duo, or a growing business, this dedicated office space combines privacy with a dynamic atmosphere that fuels both focus and collaboration.
+                </p>
+                <p className="text-muted-foreground">
+                    With bright interiors, ergonomic design, and a professional yet modern vibe, The Hive offers the perfect balance of comfort and productivity — an office you’ll look forward to working in every day.
+                </p>
+            </div>
+            
+            <div className="mb-12">
+                <h3 className="font-headline text-2xl font-bold mb-6">Features & Amenities</h3>
+                <ul className="space-y-3">
+                    {features.map((feature, index) => (
+                        <li key={index} className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-primary" />
+                            <span className="text-muted-foreground">{feature}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="mb-12">
+                <p className="text-muted-foreground mb-6">
+                    The Hive is the ideal choice for entrepreneurs and small teams who want a private office that inspires creativity, drives productivity, and reflects a forward-thinking work culture.
+                </p>
+                <Button size="lg">
+                    Get Quote
+                </Button>
+            </div>
         </div>
       </section>
     </div>
