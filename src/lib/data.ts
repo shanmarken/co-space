@@ -49,7 +49,7 @@ export const spaces: Space[] = [
     description: 'A serene and dedicated desk for focused work. Ideal for individuals needing a dedicated space.',
     capacity: 1,
     amenities: ['wifi', 'coffee', 'printing'],
-    images: ['https://picsum.photos/800/600?random=15', 'https://picsum.photos/800/600?random=16'],
+    images: ['https://img.freepik.com/premium-photo/comfortable-home-office-corner-with-laptop-computer-tablet-office-supplies-with-coffee-cup_67155-4579.jpg', 'https://picsum.photos/800/600?random=16'],
     pricing: {
       hourly: 0,
       daily: 0,
