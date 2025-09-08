@@ -53,7 +53,7 @@ export default function SpaceCard({ space }: SpaceCardProps) {
                 <span>Up to {space.capacity} {space.capacity > 1 ? 'people' : 'person'}</span>
             </div>
             <p className="font-semibold text-foreground text-lg">
-                {space.pricing.monthly ? `LKR ${space.pricing.monthly.toLocaleString()}/month` : `$${space.pricing.hourly}/hr`}
+                {space.pricing.monthly ? `LKR ${space.pricing.monthly.toLocaleString()}/month` : `LKR ${space.pricing.hourly}/hr`}
             </p>
         </div>
       </CardContent>

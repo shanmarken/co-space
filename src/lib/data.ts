@@ -17,6 +17,20 @@ export const spaces: Space[] = [
     type: 'hot_desk',
   },
   {
+    id: 'huddle-pods',
+    name: 'Huddle Pods',
+    description: 'Ideal for 2–4 person huddles, these pods are perfect for small team discussions, meetings, or quick interviews. Offering a balance of privacy and comfortable seating, they create an effective space for focused working sessions within a collaborative environment.',
+    capacity: 2,
+    amenities: ['wifi', 'coffee', 'whiteboard'],
+    images: ['https://picsum.photos/800/600?random=9', 'https://picsum.photos/800/600?random=10'],
+    pricing: {
+      hourly: 0,
+      daily: 0,
+      monthly: 25000,
+    },
+    type: 'huddle_pods',
+  },
+  {
     id: 'quiet-corner-office',
     name: 'Quiet Corner Private Office',
     description: 'A serene and private office for focused work. Ideal for small teams or individuals needing a dedicated space.',
@@ -56,19 +70,6 @@ export const spaces: Space[] = [
       monthly: 2500,
     },
     type: 'private_office',
-  },
-  {
-    id: 'huddle-pods',
-    name: 'Huddle Pods',
-    description: 'Ideal for 2–4 person huddles, these pods are perfect for small team discussions, meetings, or quick interviews. Offering a balance of privacy and comfortable seating, they create an effective space for focused working sessions within a collaborative environment.',
-    capacity: 4,
-    amenities: ['wifi', 'coffee', 'whiteboard'],
-    images: ['https://picsum.photos/800/600?random=9', 'https://picsum.photos/800/600?random=10'],
-    pricing: {
-      hourly: 30,
-      daily: 200,
-    },
-    type: 'huddle_pods',
   },
   {
     id: 'boardroom-pro',
