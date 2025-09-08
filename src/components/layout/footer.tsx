@@ -40,10 +40,10 @@ export default function Footer() {
           <div>
             <h3 className="font-headline text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Facebook className="h-6 w-6" /></Link>
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Twitter className="h-6 w-6" /></Link>
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Instagram className="h-6 w-6" /></Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Linkedin className="h-6 w-6" /></Link>
+              <Link href="https://www.facebook.com/profile.php?id=61578761254109" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Facebook className="h-6 w-6" /></Link>
+              <Link href="https://x.com/GPVSocial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Twitter className="h-6 w-6" /></Link>
+              <Link href="https://www.instagram.com/globalpearlventures/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Instagram className="h-6 w-6" /></Link>
+              <Link href="https://www.linkedin.com/in/global-pearl-ventures-25a743371/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Linkedin className="h-6 w-6" /></Link>
             </div>
           </div>
         </div>
