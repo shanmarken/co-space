@@ -36,7 +36,7 @@ export const spaces: Space[] = [
     description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
     capacity: 8,
     amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
-    images: ['https://picsum.photos/800/600?random=5', 'https://picsum.photos/800/600?random=6'],
+    images: ['https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976835.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=6'],
     pricing: {
       hourly: 750,
       daily: 500,
