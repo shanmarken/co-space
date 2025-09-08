@@ -90,7 +90,7 @@ export default function Home() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden shadow-2xl">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/1600/900?random=1"
+            src="https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976865.jpg?semt=ais_hybrid&w=740&q=80"
             alt="Inspiring workspace"
             fill
             className="object-cover"
