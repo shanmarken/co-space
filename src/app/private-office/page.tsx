@@ -1,16 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { CheckCircle } from 'lucide-react';
+import { spaces } from '@/lib/data';
+import SpaceCard from '@/components/spaces/space-card';
 
-const features = [
-    "High-speed Wi-Fi",
-    "Ergonomic desks and chairs",
-    "Abundant natural light for a vibrant work atmosphere",
-    "Complimentary coffee, tea, and water",
-    "Dedicated parking space",
-    "Private office ideal for individuals or small teams"
-];
+const privateOffices = spaces.filter(space => space.type === 'private_office');
 
 export default function PrivateOfficePage() {
   return (
@@ -18,8 +11,8 @@ export default function PrivateOfficePage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/1600/900?random=20"
-            alt="Sunlight Studio private office"
+            src="https://img.freepik.com/free-photo/modern-empty-office-with-glass-walls-long-staircase_181624-9467.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Modern private offices"
             fill
             className="object-cover"
             data-ai-hint="modern office"
@@ -29,47 +22,29 @@ export default function PrivateOfficePage() {
         </div>
         <div className="relative z-10 text-center p-4">
           <h1 className="font-headline text-5xl md:text-7xl font-bold">
-            Sunlight <span className="text-primary">Studio.</span>
+            Private <span className="text-primary">Offices.</span>
           </h1>
           <p className="mt-4 text-lg">
-            <Link href="/" className="hover:underline">Home</Link> / <span>Private Office</span>
+            <Link href="/" className="hover:underline">Home</Link> / <span>Private Offices</span>
           </p>
         </div>
       </section>
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
-            <div className='mb-12'>
+            <div className='mb-12 text-center'>
                 <h2 className="font-headline text-3xl font-bold mb-4">
-                    Bright, Inspiring Spaces for Focused Work
+                    Secure, Professional, and Ready for Your Team
                 </h2>
-                <p className="text-muted-foreground mb-4">
-                    Step into Sunlight Studio, a private office designed to energize and inspire. Bathed in natural light, this airy workspace combines comfort and functionality, providing the perfect setting for individuals or small teams who value focus and creativity.
-                </p>
-                <p className="text-muted-foreground">
-                    Featuring modern, ergonomic furniture and dedicated facilities, Sunlight Studio ensures you can work efficiently while enjoying a professional yet refreshing environment.
+                <p className="text-muted-foreground mx-auto max-w-3xl">
+                  Our private offices offer the perfect blend of privacy and community. Designed for teams of all sizes, these spaces provide a secure, dedicated environment where you can focus and collaborate effectively. Enjoy all the amenities of our coworking space while having a place to call your own.
                 </p>
             </div>
             
-            <div className="mb-12">
-                <h3 className="font-headline text-2xl font-bold mb-6">Features & Amenities</h3>
-                <ul className="space-y-3">
-                    {features.map((feature, index) => (
-                        <li key={index} className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-primary" />
-                            <span className="text-muted-foreground">{feature}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            <div className="mb-12">
-                <p className="text-muted-foreground mb-6">
-                    Sunlight Studio is perfect for professionals and teams looking for a bright, motivating space that supports productivity, creativity, and well-being.
-                </p>
-                <Button size="lg">
-                    Get Quote
-                </Button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {privateOffices.map(space => (
+                <SpaceCard key={space.id} space={space} />
+              ))}
             </div>
         </div>
       </section>
