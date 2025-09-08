@@ -7,7 +7,7 @@ const features = [
     "High-speed internet for seamless collaboration",
     "Complimentary coffee, tea, and water",
     "Ergonomic desks and chairs for comfort",
-    "Professional environment at Mireka Towers, Havelock City, Colombo"
+    "A professional setting in the heart of Thalawathugoda, Colombo"
 ];
 
 export default function HuddlePodsPage() {
