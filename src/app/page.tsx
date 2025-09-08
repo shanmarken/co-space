@@ -140,11 +140,11 @@ export default function Home() {
 
         <div className="relative h-96">
           <Image
-            src="https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976865.jpg?semt=ais_hybrid&w=740&q=80"
-            alt="Modern office interior with a desk and chair"
+            src="https://img.freepik.com/premium-photo/modern-coworking-office-interior-with-panoramic-city-view-furniture-wooden-flooring-3d-rendering_670147-81067.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Modern coworking office with city view"
             fill
             className="object-cover"
-            data-ai-hint="office studio"
+            data-ai-hint="coworking office"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h3 className="font-headline text-5xl font-bold text-white text-center p-4 max-w-4xl">Your next great idea starts here.</h3>
