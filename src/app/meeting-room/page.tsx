@@ -67,7 +67,7 @@ export default function MeetingRoomPage() {
                     Our meeting rooms are the go-to choice for entrepreneurs, consultants, and corporate teams who want to collaborate effectively, showcase ideas, and leave a lasting impression.
                 </p>
                 <Button size="lg">
-                    👉 Get Quote
+                    Get Quote
                 </Button>
             </div>
         </div>
