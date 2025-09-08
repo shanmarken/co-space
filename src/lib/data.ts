@@ -34,11 +34,11 @@ export const spaces: Space[] = [
     id: 'collaborate-hub-room',
     name: 'Collaborate Hub Meeting Room',
     description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
-    capacity: 12,
+    capacity: 8,
     amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
     images: ['https://picsum.photos/800/600?random=5', 'https://picsum.photos/800/600?random=6'],
     pricing: {
-      hourly: 75,
+      hourly: 750,
       daily: 500,
     },
     type: 'meeting_room',
