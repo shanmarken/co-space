@@ -63,7 +63,7 @@ export const spaces: Space[] = [
     description: 'A bright and airy private office filled with natural light. Comes with ergonomic furniture and dedicated parking.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'parking'],
-    images: ['https://picsum.photos/800/600?random=7', 'https://picsum.photos/800/600?random=8'],
+    images: ['https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=8'],
     pricing: {
       hourly: 0,
       daily: 0,
