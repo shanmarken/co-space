@@ -65,9 +65,9 @@ export const spaces: Space[] = [
     amenities: ['wifi', 'coffee', 'parking'],
     images: ['https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=8'],
     pricing: {
-      hourly: 0,
+      hourly: 1500,
       daily: 0,
-      monthly: 95000,
+      monthly: 0,
     },
     type: 'private_office',
   },
