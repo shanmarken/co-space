@@ -1,14 +1,12 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useRef } from 'react';
 import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, HelpCircle, Phone, Mail, MapPin, Clock, Target } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import CallbackForm from '@/components/contact/callback-form';
 
@@ -80,26 +78,8 @@ const faqs = [
 ];
 
 export default function Home() {
-  const searchParams = useSearchParams();
-  const [spaceType, setSpaceType] = useState('all');
   const spacesRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const typeParam = searchParams.get('type');
-    if (typeParam) {
-      setSpaceType(typeParam);
-    } else {
-      setSpaceType('all');
-    }
-  }, [searchParams]);
-
-  const filteredSpaces = useMemo(() => {
-    if (spaceType === 'all') {
-      return spaces;
-    }
-    return spaces.filter(space => space.type === spaceType);
-  }, [spaceType]);
   
   const handleScrollToSpaces = () => {
     spacesRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -142,18 +122,11 @@ export default function Home() {
             </h2>
           </div>
 
-          {filteredSpaces.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredSpaces.map(space => (
-                <SpaceCard key={space.id} space={space} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16 border-2 border-dashed rounded-lg">
-                <h2 className="font-headline text-2xl font-semibold">No Spaces Found</h2>
-                <p className="text-muted-foreground mt-2">Try adjusting your filters to find more options.</p>
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {spaces.map(space => (
+              <SpaceCard key={space.id} space={space} />
+            ))}
+          </div>
         </div>
       </section>
 

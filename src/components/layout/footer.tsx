@@ -20,10 +20,10 @@ export default function Footer() {
           <div>
             <h3 className="font-headline text-lg font-semibold text-white mb-4">Workspaces</h3>
             <ul className="space-y-2">
-              <li><Link href="/?type=hot_desk" className="hover:text-white transition-colors">Hot Desks</Link></li>
-              <li><Link href="/?type=private_office" className="hover:text-white transition-colors">Private Offices</Link></li>
-              <li><Link href="/?type=meeting_room" className="hover:text-white transition-colors">Meeting Rooms</Link></li>
-              <li><Link href="/?type=huddle_pods" className="hover:text-white transition-colors">Huddle Pods</Link></li>
+              <li><Link href="/hot-desk" className="hover:text-white transition-colors">Hot Desks</Link></li>
+              <li><Link href="/private-office" className="hover:text-white transition-colors">Private Offices</Link></li>
+              <li><Link href="/meeting-room" className="hover:text-white transition-colors">Meeting Rooms</Link></li>
+              <li><Link href="/huddle-pods" className="hover:text-white transition-colors">Huddle Pods</Link></li>
             </ul>
           </div>
 

@@ -10,10 +10,10 @@ import {
 import { ChevronDown, Menu } from 'lucide-react';
 
 const spaceTypes = [
-  { value: 'hot_desk', label: 'Hot Desks' },
-  { value: 'private_office', label: 'Private Offices' },
-  { value: 'meeting_room', label: 'Meeting Rooms' },
-  { value: 'huddle_pods', label: 'Huddle Pods' },
+  { value: 'hot-desk', label: 'Hot Desks' },
+  { value: 'private-office', label: 'Private Offices' },
+  { value: 'meeting-room', label: 'Meeting Rooms' },
+  { value: 'huddle-pods', label: 'Huddle Pods' },
 ];
 
 export default function Header() {
@@ -36,7 +36,7 @@ export default function Header() {
             <DropdownMenuContent>
               {spaceTypes.map(type => (
                 <DropdownMenuItem key={type.value} asChild>
-                  <Link href={`/?type=${type.value}`}>{type.label}</Link>
+                  <Link href={`/${type.value}`}>{type.label}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -61,19 +61,11 @@ export default function Header() {
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/">Home</Link>
                 </Button>
-                {/* Simple links for mobile for now */}
-                <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/?type=hot_desk">Hot Desks</Link>
-                </Button>
-                <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/?type=private_office">Private Offices</Link>
-                </Button>
-                <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/?type=meeting_room">Meeting Rooms</Link>
-                </Button>
-                <Button variant="link" asChild className="justify-start text-lg">
-                  <Link href="/?type=huddle_pods">Huddle Pods</Link>
-                </Button>
+                {spaceTypes.map(type => (
+                  <Button key={type.value} variant="link" asChild className="justify-start text-lg">
+                    <Link href={`/${type.value}`}>{type.label}</Link>
+                  </Button>
+                ))}
                 <Button variant="link" asChild className="justify-start text-lg">
                   <Link href="/#about">About Us</Link>
                 </Button>
