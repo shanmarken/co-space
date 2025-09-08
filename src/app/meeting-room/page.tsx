@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { spaces } from '@/lib/data';
 
 const features = [
     "High-speed Wi-Fi",
@@ -12,13 +13,15 @@ const features = [
     "Writeable glass walls with markers for brainstorming"
 ];
 
+const meetingRoomSpace = spaces.find(space => space.id === 'collaborate-hub-room');
+
 export default function MeetingRoomPage() {
   return (
     <div>
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/1600/900?random=21"
+            src={meetingRoomSpace?.images[0] || "https://picsum.photos/1600/900?random=21"}
             alt="Meeting room"
             fill
             className="object-cover"

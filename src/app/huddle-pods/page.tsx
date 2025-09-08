@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { spaces } from '@/lib/data';
 
 const features = [
     "High-speed internet for seamless collaboration",
@@ -10,13 +11,15 @@ const features = [
     "A professional setting in the heart of Thalawathugoda, Colombo"
 ];
 
+const huddlePodsSpace = spaces.find(space => space.id === 'huddle-pods');
+
 export default function HuddlePodsPage() {
   return (
     <div>
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/1600/900?random=22"
+            src={huddlePodsSpace?.images[0] || "https://picsum.photos/1600/900?random=22"}
             alt="Huddle pods"
             fill
             className="object-cover"

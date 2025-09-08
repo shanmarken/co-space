@@ -2,13 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { spaces } from '@/lib/data';
 
 const features = [
     "Reliable high-speed Wi-Fi",
     "Complimentary tea, coffee, and water",
     "Comfortable desks and chairs built for productivity",
     "A professional setting in the heart of Thalawathugoda, Colombo"
-]
+];
+
+const hotDeskSpace = spaces.find(space => space.id === 'urban-oasis-desk');
 
 export default function HotDeskPage() {
   return (
@@ -16,7 +19,7 @@ export default function HotDeskPage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/1600/900?random=14"
+            src={hotDeskSpace?.images[0] || "https://picsum.photos/1600/900?random=14"}
             alt="Hot desk area"
             fill
             className="object-cover"

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { spaces } from '@/lib/data';
 
 const features = [
     "High-speed internet for seamless collaboration",
@@ -10,13 +11,15 @@ const features = [
     "Professional environment at Mireka Towers, Havelock City, Colombo"
 ];
 
+const dedicatedDeskSpace = spaces.find(space => space.id === 'quiet-corner-desk');
+
 export default function DedicatedDeskPage() {
   return (
     <div>
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://picsum.photos/1600/900?random=25"
+            src={dedicatedDeskSpace?.images[0] || "https://picsum.photos/1600/900?random=25"}
             alt="Dedicated desk area"
             fill
             className="object-cover"
