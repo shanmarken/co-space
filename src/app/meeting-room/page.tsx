@@ -43,7 +43,7 @@ export default function MeetingRoomPage() {
                     Spaces That Inspire Collaboration & Confidence
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                    Make the right impression with our fully equipped meeting rooms at CO-LABs. Whether you’re pitching to clients, hosting a team strategy session, or conducting a virtual conference, our professional spaces are designed to elevate your meetings beyond the ordinary.
+                    Make the right impression with our fully equipped meeting rooms at Co-Space. Whether you’re pitching to clients, hosting a team strategy session, or conducting a virtual conference, our professional spaces are designed to elevate your meetings beyond the ordinary.
                 </p>
                 <p className="text-muted-foreground">
                     Created to encourage both productivity and creativity, each room combines modern technology, ergonomic comfort, and a professional atmosphere — perfect for everything from workshops to high-stakes presentations.
