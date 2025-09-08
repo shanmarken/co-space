@@ -29,6 +29,19 @@ const typeLinks: Record<Space['type'], string> = {
 export default function SpaceCard({ space }: SpaceCardProps) {
   const link = typeLinks[space.type] || `/spaces/${space.id}`;
   
+  const getPrice = () => {
+    if (space.pricing.monthly) {
+        return `LKR ${space.pricing.monthly.toLocaleString()}/month`;
+    }
+    if (space.pricing.daily) {
+        return `LKR ${space.pricing.daily.toLocaleString()}/day`;
+    }
+    if (space.pricing.hourly) {
+        return `LKR ${space.pricing.hourly.toLocaleString()}/hr`;
+    }
+    return 'N/A';
+  }
+
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-shadow duration-300 hover:shadow-xl">
       <div className="relative h-56 w-full">
@@ -55,7 +68,7 @@ export default function SpaceCard({ space }: SpaceCardProps) {
                 <span>Up to {space.capacity} {space.capacity > 1 ? 'people' : 'person'}</span>
             </div>
             <p className="font-semibold text-foreground text-lg">
-                {space.pricing.monthly ? `LKR ${space.pricing.monthly.toLocaleString()}/month` : `LKR ${space.pricing.hourly.toLocaleString()}/hr`}
+                {getPrice()}
             </p>
         </div>
       </CardContent>
