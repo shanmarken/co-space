@@ -7,7 +7,7 @@ export const spaces: Space[] = [
     description: 'A vibrant, open-plan hot desk area perfect for freelancers and remote workers. Enjoy our high-speed Wi-Fi and unlimited coffee.',
     capacity: 1,
     amenities: ['wifi', 'coffee', 'printing'],
-    images: ['https://picsum.photos/800/600?random=1', 'https://picsum.photos/800/600?random=2'],
+    images: ['https://img.freepik.com/free-photo/side-view-businesswoman-using-sign-language-video-call_23-2148740302.jpg?semt=ais_hybrid&w=740&q=80', 'https://picsum.photos/800/600?random=2'],
     pricing: {
       hourly: 10,
       daily: 50,
