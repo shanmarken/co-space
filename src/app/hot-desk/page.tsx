@@ -34,7 +34,7 @@ export default function HotDeskPage() {
         </div>
         <div className="relative z-10 text-center p-4">
           <h1 className="font-headline text-5xl md:text-7xl font-bold">
-            Hot <span className="text-green-400">Desk.</span>
+            Hot <span className="text-primary">Desk.</span>
           </h1>
           <p className="mt-4 text-lg">
             <Link href="/" className="hover:underline">Home</Link> / <span>Hot Desk</span>
@@ -61,7 +61,7 @@ export default function HotDeskPage() {
                 <ul className="space-y-3">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-green-500" />
+                            <CheckCircle className="h-5 w-5 text-primary" />
                             <span className="text-muted-foreground">{feature}</span>
                         </li>
                     ))}
@@ -72,7 +72,7 @@ export default function HotDeskPage() {
                 <p className="text-muted-foreground mb-6">
                 Our hot desks are ideally suited for solo professionals who value a dynamic, community-driven environment. Choose from flexible access options, including day passes, monthly subscriptions, and tailored flex packages to suit your business needs.
                 </p>
-                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-black">
+                <Button size="lg">
                     Get Quote
                 </Button>
             </div>

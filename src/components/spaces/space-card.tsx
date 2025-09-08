@@ -10,14 +10,23 @@ interface SpaceCardProps {
   space: Space;
 }
 
-const typeLabels = {
+const typeLabels: Record<Space['type'], string> = {
   hot_desk: 'Hot Desk',
   private_office: 'Private Office',
   meeting_room: 'Meeting Room',
   huddle_pods: 'Huddle Pods',
 };
 
+const typeLinks: Record<Space['type'], string> = {
+    hot_desk: '/hot-desk',
+    private_office: '/private-office',
+    meeting_room: '/meeting-room',
+    huddle_pods: '/huddle-pods',
+}
+
 export default function SpaceCard({ space }: SpaceCardProps) {
+  const link = typeLinks[space.type] || `/spaces/${space.id}`;
+  
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-shadow duration-300 hover:shadow-xl">
       <div className="relative h-56 w-full">
@@ -48,7 +57,7 @@ export default function SpaceCard({ space }: SpaceCardProps) {
       </CardContent>
       <CardFooter>
         <Button asChild className="w-full" variant="outline">
-          <Link href={`/spaces/${space.id}`}>
+          <Link href={link}>
             View & Book <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
