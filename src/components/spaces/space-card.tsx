@@ -18,16 +18,17 @@ const typeLabels: Record<Space['type'], string> = {
   dedicated_desk: 'Dedicated Desk',
 };
 
-const typeLinks: Record<Space['type'], string> = {
-    hot_desk: '/hot-desk',
-    private_office: '/private-office',
-    meeting_room: '/meeting-room',
-    huddle_pods: '/huddle-pods',
-    dedicated_desk: '/dedicated-desk',
-}
+const typeLinks: Record<string, string> = {
+    'sunlight-studio': '/private-office/sunlight-studio',
+    'urban-oasis-desk': '/hot-desk',
+    'huddle-pods': '/huddle-pods',
+    'collaborate-hub-room': '/meeting-room',
+    'quiet-corner-desk': '/dedicated-desk',
+    'modern-private-office': '/private-office', // Default for other private offices
+};
 
 export default function SpaceCard({ space }: SpaceCardProps) {
-  const link = typeLinks[space.type] || `/spaces/${space.id}`;
+  const link = typeLinks[space.id] || (space.type === 'private_office' ? '/private-office' : `/spaces/${space.id}`);
   
   const getPrice = () => {
     if (space.pricing.monthly) {
