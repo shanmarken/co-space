@@ -4,11 +4,10 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
 
 const features = [
-    "High-speed Wi-Fi",
-    "Complimentary water, coffee, and tea",
-    "Ergonomic desks and chairs",
-    "A professional setting located in Havelock City, Colombo, Sri Lanka",
-    "Monitors available at hot desks (upon request)"
+    "Reliable high-speed Wi-Fi",
+    "Complimentary tea, coffee, and water",
+    "Comfortable desks and chairs built for productivity",
+    "A professional setting in the heart of Thalawathugoda, Colombo"
 ]
 
 const images = [
@@ -49,7 +48,10 @@ export default function HotDeskPage() {
                 Perfect Spaces for Productive Meetings Flexible, Modern Workspaces for Digital Nomads and Solo Professionals
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                Experience ultimate flexibility with hot desks at CO-LABS. Ideal for freelancers, digital nomads, and remote professionals, our hot desks offer plug-and-play convenience, high-speed internet, ergonomic seating, and access to premium amenities.
+                Step into a flexible, modern environment designed for independent professionals at Co-Space. Our hot desk options are perfect for freelancers, consultants, digital nomads, or anyone who needs a productive place to work without long-term commitments.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                Enjoy plug-and-play convenience with fast internet, ergonomic workstations, and a welcoming community that encourages both focus and collaboration.
                 </p>
                 <p className="text-muted-foreground">
                 Whether you need a few hours or a full day of focused work, our vibrant coworking environment in Colombo, Sri Lanka empowers your productivity and fosters valuable networking opportunities.
@@ -57,7 +59,7 @@ export default function HotDeskPage() {
             </div>
             
             <div className="mb-12">
-                <h3 className="font-headline text-2xl font-bold mb-6">Features and Amenities:</h3>
+                <h3 className="font-headline text-2xl font-bold mb-6">Why Choose Our Hot Desks?</h3>
                 <ul className="space-y-3">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-center gap-3">
