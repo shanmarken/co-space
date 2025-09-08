@@ -39,7 +39,7 @@ export const spaces: Space[] = [
     images: ['https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976835.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=6'],
     pricing: {
       hourly: 750,
-      daily: 500,
+      daily: 0,
     },
     type: 'meeting_room',
   },
@@ -67,7 +67,6 @@ export const spaces: Space[] = [
     pricing: {
       hourly: 1500,
       daily: 0,
-      monthly: 0,
     },
     type: 'private_office',
   },
