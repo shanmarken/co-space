@@ -231,8 +231,8 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="relative aspect-[4/3]">
                     <Image
-                      src="https://picsum.photos/600/450?random=32"
-                      alt="Community at Co-Labs"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qKN-HDLyyzNBDTfiNQ5K04vyONok4zsmPQ&s"
+                      alt="A group of colleagues collaborating in an office"
                       fill
                       className="object-cover"
                       data-ai-hint="team collaboration"
