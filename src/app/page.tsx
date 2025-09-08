@@ -6,7 +6,7 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, Wind, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -45,8 +45,8 @@ const perks = [
     description: 'Convenient and safe parking for your vehicle.',
   },
   {
-    icon: <Wind className="h-10 w-10 text-primary" />,
-    name: 'Outdoor Space',
+    icon: <PersonStanding className="h-10 w-10 text-primary" />,
+    name: 'Outdoor desk',
     description: 'A breath of fresh air for breaks and informal meetings.',
   },
   {
