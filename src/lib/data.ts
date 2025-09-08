@@ -31,6 +31,19 @@ export const spaces: Space[] = [
     type: 'huddle_pods',
   },
   {
+    id: 'collaborate-hub-room',
+    name: 'Collaborate Hub Meeting Room',
+    description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
+    capacity: 12,
+    amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
+    images: ['https://picsum.photos/800/600?random=5', 'https://picsum.photos/800/600?random=6'],
+    pricing: {
+      hourly: 75,
+      daily: 500,
+    },
+    type: 'meeting_room',
+  },
+  {
     id: 'quiet-corner-office',
     name: 'Quiet Corner Private Office',
     description: 'A serene and private office for focused work. Ideal for small teams or individuals needing a dedicated space.',
@@ -43,19 +56,6 @@ export const spaces: Space[] = [
       monthly: 4000,
     },
     type: 'private_office',
-  },
-  {
-    id: 'collaborate-hub-room',
-    name: 'Collaborate Hub Meeting Room',
-    description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
-    capacity: 12,
-    amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
-    images: ['https://picsum.photos/800/600?random=5', 'https://picsum.photos/800/600?random=6'],
-    pricing: {
-      hourly: 75,
-      daily: 500,
-    },
-    type: 'meeting_room',
   },
   {
     id: 'sunlight-studio',
