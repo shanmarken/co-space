@@ -20,15 +20,15 @@ const typeLabels: Record<Space['type'], string> = {
 
 const typeLinks: Record<string, string> = {
     'sunlight-studio': '/private-office/sunlight-studio',
+    'modern-private-office': '/private-office/the-hive',
     'urban-oasis-desk': '/hot-desk',
     'huddle-pods': '/huddle-pods',
     'collaborate-hub-room': '/meeting-room',
     'quiet-corner-desk': '/dedicated-desk',
-    'modern-private-office': '/private-office', // Default for other private offices
 };
 
 export default function SpaceCard({ space }: SpaceCardProps) {
-  const link = typeLinks[space.id] || (space.type === 'private_office' ? '/private-office' : `/spaces/${space.id}`);
+  const link = typeLinks[space.id] || `/spaces/${space.id}`;
   
   const getPrice = () => {
     if (space.pricing.monthly) {
