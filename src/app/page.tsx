@@ -6,7 +6,7 @@ import { spaces } from '@/lib/data';
 import SpaceCard from '@/components/spaces/space-card';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, HelpCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { ArrowDown, Briefcase, Lightbulb, Users, Wifi, PersonStanding, MonitorSpeaker, Coffee, Mic, ParkingCircle, Utensils, HelpCircle, Phone, Mail, MapPin, Clock, Target } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -45,7 +45,7 @@ const perks = [
     description: 'Convenient and safe parking for your vehicle.',
   },
   {
-    icon: <PersonStanding className="h-10 w-10 text-primary" />,
+    icon: <Briefcase className="h-10 w-10 text-primary" />,
     name: 'Outdoor desk',
     description: 'A breath of fresh air for breaks and informal meetings.',
   },
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-12 text-center mb-20">
                   <div className="flex flex-col items-center">
-                    <Briefcase className="h-12 w-12 text-primary mb-4" />
+                    <Target className="h-12 w-12 text-primary mb-4" />
                     <h3 className="font-headline text-2xl font-semibold mb-2">Our Mission</h3>
                     <p className="text-muted-foreground">To empower individuals and teams by providing seamless access to inspiring and productive work environments, anywhere, anytime.</p>
                   </div>
