@@ -10,12 +10,6 @@ const features = [
     "A professional setting in the heart of Thalawathugoda, Colombo"
 ]
 
-const images = [
-    "https://picsum.photos/800/600?random=15",
-    "https://picsum.photos/800/600?random=16",
-    "https://picsum.photos/800/600?random=17"
-]
-
 export default function HotDeskPage() {
   return (
     <div>
@@ -77,20 +71,6 @@ export default function HotDeskPage() {
                 <Button size="lg">
                     Get Quote
                 </Button>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {images.map((src, index) => (
-                    <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                        <Image 
-                            src={src}
-                            alt={`Hot desk space ${index + 1}`}
-                            fill
-                            className="object-cover"
-                            data-ai-hint="modern office"
-                        />
-                    </div>
-                ))}
             </div>
         </div>
       </section>
