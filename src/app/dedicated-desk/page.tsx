@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
 
 const features = [
-    "Reliable high-speed Wi-Fi",
-    "Complimentary tea, coffee, and water",
-    "Comfortable desks and chairs built for productivity",
-    "A professional setting in the heart of Thalawathugoda, Colombo"
-]
+    "High-speed internet for seamless collaboration",
+    "Complimentary coffee, tea, and water",
+    "Ergonomic desks and chairs for comfort",
+    "Professional environment at Mireka Towers, Havelock City, Colombo"
+];
 
 export default function DedicatedDeskPage() {
   return (
@@ -63,7 +63,7 @@ export default function DedicatedDeskPage() {
 
             <div className="mb-12">
                 <p className="text-muted-foreground mb-6">
-                Our dedicated desks are ideally suited for solo professionals who value a dynamic, community-driven environment. Choose from flexible access options, including day passes, monthly subscriptions, and tailored flex packages to suit your business needs.
+                Positioned in one of Colombo’s most prestigious business hubs, our dedicated desks are the perfect solution for teams that need flexibility, privacy, and a productive setting without the overhead of a full office.
                 </p>
                 <Button size="lg">
                     Get Quote
