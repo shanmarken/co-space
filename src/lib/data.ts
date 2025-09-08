@@ -22,7 +22,7 @@ export const spaces: Space[] = [
     description: 'Ideal for 2–4 person huddles, these pods are perfect for small team discussions, meetings, or quick interviews. Offering a balance of privacy and comfortable seating, they create an effective space for focused working sessions within a collaborative environment.',
     capacity: 2,
     amenities: ['wifi', 'coffee', 'whiteboard'],
-    images: ['https://picsum.photos/800/600?random=9', 'https://picsum.photos/800/600?random=10'],
+    images: ['https://ik.imagekit.io/72dpiweb/vidak/slir/w-h520-q90/3693/', 'https://picsum.photos/800/600?random=10'],
     pricing: {
       hourly: 0,
       daily: 0,
