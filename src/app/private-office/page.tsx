@@ -6,10 +6,10 @@ import { CheckCircle } from 'lucide-react';
 const features = [
     "High-speed Wi-Fi",
     "Ergonomic desks and chairs",
-    "Natural-light interiors with modern décor",
+    "Abundant natural light for a vibrant work atmosphere",
     "Complimentary coffee, tea, and water",
     "Dedicated parking space",
-    "Professional setting ideal for small teams"
+    "Private office ideal for individuals or small teams"
 ];
 
 export default function PrivateOfficePage() {
@@ -19,7 +19,7 @@ export default function PrivateOfficePage() {
         <div className="absolute inset-0">
           <Image
             src="https://picsum.photos/1600/900?random=20"
-            alt="The Hive private office"
+            alt="Sunlight Studio private office"
             fill
             className="object-cover"
             data-ai-hint="modern office"
@@ -29,7 +29,7 @@ export default function PrivateOfficePage() {
         </div>
         <div className="relative z-10 text-center p-4">
           <h1 className="font-headline text-5xl md:text-7xl font-bold">
-            The <span className="text-primary">Hive.</span>
+            Sunlight <span className="text-primary">Studio.</span>
           </h1>
           <p className="mt-4 text-lg">
             <Link href="/" className="hover:underline">Home</Link> / <span>Private Office</span>
@@ -41,13 +41,13 @@ export default function PrivateOfficePage() {
         <div className="container mx-auto px-4 max-w-5xl">
             <div className='mb-12'>
                 <h2 className="font-headline text-3xl font-bold mb-4">
-                    Workspaces That Spark Creativity & Growth
+                    Bright, Inspiring Spaces for Focused Work
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                    Step into The Hive, a vibrant private office designed for teams that thrive on energy and inspiration. Whether you’re a small startup, a creative duo, or a growing business, this dedicated office space combines privacy with a dynamic atmosphere that fuels both focus and collaboration.
+                    Step into Sunlight Studio, a private office designed to energize and inspire. Bathed in natural light, this airy workspace combines comfort and functionality, providing the perfect setting for individuals or small teams who value focus and creativity.
                 </p>
                 <p className="text-muted-foreground">
-                    With bright interiors, ergonomic design, and a professional yet modern vibe, The Hive offers the perfect balance of comfort and productivity — an office you’ll look forward to working in every day.
+                    Featuring modern, ergonomic furniture and dedicated facilities, Sunlight Studio ensures you can work efficiently while enjoying a professional yet refreshing environment.
                 </p>
             </div>
             
@@ -65,7 +65,7 @@ export default function PrivateOfficePage() {
 
             <div className="mb-12">
                 <p className="text-muted-foreground mb-6">
-                    The Hive is the ideal choice for entrepreneurs and small teams who want a private office that inspires creativity, drives productivity, and reflects a forward-thinking work culture.
+                    Sunlight Studio is perfect for professionals and teams looking for a bright, motivating space that supports productivity, creativity, and well-being.
                 </p>
                 <Button size="lg">
                     Get Quote
