@@ -231,7 +231,7 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="relative aspect-[4/3]">
                     <Image
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qKN-HDLyyzNBDTfiNQ5K04vyONok4zsmPQ&s"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmWNCH2-H_piqnJq4UnZoRQr4CLQ4EPE3DBw&s"
                       alt="A group of colleagues collaborating in an office"
                       fill
                       className="object-cover"
