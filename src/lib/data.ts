@@ -3,7 +3,7 @@ import type { Space } from './types';
 export const spaces: Space[] = [
   {
     id: 'urban-oasis-desk',
-    name: 'Urban Oasis Hot Desk',
+    name: 'Urban Hot Desk',
     description: 'A vibrant, open-plan hot desk area perfect for freelancers and remote workers. Enjoy our high-speed Wi-Fi and unlimited coffee.',
     capacity: 1,
     amenities: ['wifi', 'coffee', 'printing'],
@@ -12,6 +12,7 @@ export const spaces: Space[] = [
       hourly: 10,
       daily: 50,
       weekly: 200,
+      monthly: 12000,
     },
     type: 'hot_desk',
   },
