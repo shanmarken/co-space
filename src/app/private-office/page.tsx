@@ -11,7 +11,7 @@ export default function PrivateOfficePage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJZrznjDwUVM6KCvMAUAr-C-VjMhygzNCLw&s"
+            src="https://img.freepik.com/free-photo/3d-rendering-business-meeting-working-room-office-building_105762-1992.jpg"
             alt="Modern private offices"
             fill
             className="object-cover"
