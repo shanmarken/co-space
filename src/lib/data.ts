@@ -7,7 +7,7 @@ export const spaces: Space[] = [
     description: 'A vibrant, open-plan hot desk area perfect for freelancers and remote workers. Enjoy our high-speed Wi-Fi and unlimited coffee.',
     capacity: 1,
     amenities: ['wifi', 'coffee', 'printing'],
-    images: ['https://img.freepik.com/free-photo/side-view-businesswoman-using-sign-language-video-call_23-2148740302.jpg?semt=ais_hybrid&w=740&q=80', 'https://picsum.photos/800/600?random=2'],
+    images: ['/images/urban-hot-desk.jpg', '/images/urban-hot-desk-2.jpg'],
     pricing: {
       hourly: 10,
       daily: 50,
@@ -22,7 +22,7 @@ export const spaces: Space[] = [
     description: 'Ideal for 2–4 person huddles, these pods are perfect for small team discussions, meetings, or quick interviews. Offering a balance of privacy and comfortable seating, they create an effective space for focused working sessions within a collaborative environment.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'whiteboard'],
-    images: ['https://ik.imagekit.io/72dpiweb/vidak/slir/w-h520-q90/3693/', 'https://picsum.photos/800/600?random=10'],
+    images: ['/images/huddle-pods.jpg', '/images/huddle-pods-2.jpg'],
     pricing: {
       hourly: 0,
       daily: 0,
@@ -36,7 +36,7 @@ export const spaces: Space[] = [
     description: 'A modern meeting room equipped with a large screen, whiteboard, and video conferencing facilities. Perfect for team meetings and client presentations.',
     capacity: 8,
     amenities: ['wifi', 'coffee', 'whiteboard', 'kitchen'],
-    images: ['https://img.freepik.com/free-photo/studio-arrangement-work_23-2151976835.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=6'],
+    images: ['/images/meeting-room.jpg', '/images/meeting-room-2.jpg'],
     pricing: {
       hourly: 750,
       daily: 0,
@@ -49,7 +49,7 @@ export const spaces: Space[] = [
     description: 'A serene and dedicated desk for focused work. Ideal for individuals needing a dedicated space.',
     capacity: 1,
     amenities: ['wifi', 'coffee', 'printing'],
-    images: ['https://img.freepik.com/premium-photo/comfortable-home-office-corner-with-laptop-computer-tablet-office-supplies-with-coffee-cup_67155-4579.jpg', 'https://picsum.photos/800/600?random=16'],
+    images: ['/images/dedicated-desk.jpg', '/images/dedicated-desk-2.jpg'],
     pricing: {
       hourly: 0,
       daily: 0,
@@ -63,7 +63,7 @@ export const spaces: Space[] = [
     description: 'A bright and airy private office filled with natural light. Comes with ergonomic furniture and dedicated parking.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'parking'],
-    images: ['https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg?semt=ais_incoming&w=740&q=80', 'https://picsum.photos/800/600?random=8'],
+    images: ['/images/sunlight-studio.jpg', '/images/sunlight-studio-2.jpg'],
     pricing: {
       hourly: 1500,
       daily: 0,
@@ -76,7 +76,7 @@ export const spaces: Space[] = [
     description: 'A vibrant private office designed for energy and inspiration. With modern interiors, ergonomic setups, and a touch of creativity, this space fuels both focus and collaboration. Perfect for small teams ready to build big ideas.',
     capacity: 4,
     amenities: ['wifi', 'coffee', 'parking', 'printing'],
-    images: ['https://img.freepik.com/free-photo/empty-modern-office-workspace-designed-job-interviews-achieve-success_482257-116550.jpg?semt=ais_hybrid&w=740', 'https://picsum.photos/800/600?random=28'],
+    images: ['/images/the-hive.jpg', '/images/the-hive-2.jpg'],
     pricing: {
       hourly: 0,
       daily: 0,
