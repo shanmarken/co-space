@@ -45,7 +45,7 @@ export default function HotDeskPage() {
                 Perfect Spaces for Productive Meetings Flexible, Modern Workspaces for Digital Nomads and Solo Professionals
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                Step into a flexible, modern environment designed for independent professionals at Co-Space. Our hot desk options are perfect for freelancers, consultants, digital nomads, or anyone who needs a productive place to work without long-term commitments.
+                Step into a flexible, modern environment designed for independent professionals at DeskMate. Our hot desk options are perfect for freelancers, consultants, digital nomads, or anyone who needs a productive place to work without long-term commitments.
                 </p>
                 <p className="text-muted-foreground mb-4">
                 Enjoy plug-and-play convenience with fast internet, ergonomic workstations, and a welcoming community that encourages both focus and collaboration.
